@@ -10,3 +10,5 @@ RUN npm ci
 COPY . ./
 
 ENTRYPOINT ["npm", "run", "start"]
+
+CMD ["pnpm", "run", "preview", "--", "--host", "0.0.0.0", "--port", "8080"]
